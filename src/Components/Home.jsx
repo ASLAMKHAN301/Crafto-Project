@@ -577,7 +577,7 @@ export function Home(props) {
         <img
           src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-08.png"
           alt=""
-          className="absolute top-12 left-0 w-1/2 object-contain -z-10"
+          className="absolute top-12 left-0 w-1/2 object-contain -z-10 animate-float"
         />
 
         {/* Marquee text */}
@@ -722,13 +722,13 @@ export function Home(props) {
               <SwiperSlide key={index}>
                 <div className="flex border border-gray-300 rounded-lg overflow-hidden bg-white">
                   <div className="p-4 flex items-center justify-center bg-gray-100">
-                    <h3 className="text-sm font-bold uppercase text-gray-700">
+                    <h3 className="text-sm font-bold uppercase text-gray-700 rotate-270 inline-block">
                       {t.name}
                     </h3>
                   </div>
                   <div className="p-6 border-l border-gray-300 flex-1">
                     <p className="text-gray-600 mb-4">{t.review}</p>
-                    <div className="bg-yellow-400 text-white inline-block px-4 py-1 rounded-full text-sm">
+                    <div className="bg-yellow-400 text-white inline-block px-4 py-1 rounded-full text-lg">
                       ★★★★★
                     </div>
                   </div>
