@@ -157,7 +157,7 @@ export function Home(props) {
             {/* Text Side */}
             <div className="space-y-6 relative z-10 mb-16 md:mb-40">
               <div className="flex items-center gap-4">
-                <span className="bg-red-500 text-white text-xs font-semibold uppercase px-4 py-2 rounded-full">
+                <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold uppercase px-4 py-2 rounded-full">
                   Get started
                 </span>
                 <span className="text-lg font-medium text-gray-700 animate-pulse">

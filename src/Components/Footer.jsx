@@ -22,7 +22,7 @@ export default function Footer() {
             </h5>
             <Link
               to="/what-we-do"
-              className="inline-flex space-x-2 items-center mx-12 md:mx-0 bg-white text-gray-900 font-bold px-6 py-3 rounded-sm shadow hover:bg-gray-100 transition"
+              className="inline-flex space-x-2 items-center mx-12 md:mx-0 bg-white text-sm md:text-lg text-gray-900 font-bold px-6 py-3 rounded-sm shadow hover:bg-gray-100 transition"
             >
               <FiMail />
               <span>Get started</span>
