@@ -360,6 +360,73 @@ export function Contact(props) {
                 </form>
               </div>
             </div>
+            {/* Social Media */}
+            <div className="flex flex-col md:flex-row justify-center items-center mt-10  space-y-4 md:space-y-0 md:space-x-6">
+              {" "}
+              <span className="text-2xl font-semibold text-gray-800">
+                {" "}
+                Connect with social media{" "}
+              </span>{" "}
+              <div className="hidden lg:block w-40 h-px bg-gray-700 opacity-40"></div>{" "}
+              <ul className="flex space-x-12 md:space-x-6 text-xl text-gray-700">
+                {" "}
+                <li>
+                  {" "}
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FaFacebookF />{" "}
+                  </a>{" "}
+                </li>{" "}
+                <li>
+                  {" "}
+                  <a
+                    href="https://dribbble.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FaDribbble />{" "}
+                  </a>{" "}
+                </li>{" "}
+                <li>
+                  {" "}
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FaTwitter />{" "}
+                  </a>{" "}
+                </li>{" "}
+                <li>
+                  {" "}
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FaInstagram />{" "}
+                  </a>{" "}
+                </li>{" "}
+                <li>
+                  {" "}
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <FaLinkedinIn />{" "}
+                  </a>{" "}
+                </li>{" "}
+              </ul>{" "}
+            </div>
           </div>
         </section>
       </section>

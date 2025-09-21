@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FiArrowRight } from "react-icons/fi";
+import { ReactTyped } from "react-typed";
 
 const services = [
   {
@@ -124,7 +125,7 @@ const faqs = [
 
 export function Home(props) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [openIndex, setOpenIndex] = useState(0); // first item open by default
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -160,18 +161,26 @@ export function Home(props) {
                 <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold uppercase px-4 py-2 rounded-full">
                   Get started
                 </span>
-                <span className="text-lg font-medium text-gray-700 animate-pulse">
-                  Exploratory data analysis
+                <span className="text-lg font-semibold">
+                  <ReactTyped
+                    strings={[
+                      "Real-time data score analysis",
+                      "Exploratory data analysis",
+                      "Tailored pricing plans",
+                    ]}
+                    typeSpeed={50}
+                    backSpeed={30}
+                    loop
+                  />
                 </span>
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
                 Analytics solutions for new{" "}
                 <span className="relative inline-block">
-                  <span className="relative z-10">business</span>
-                  <span className="absolute bottom-1 left-0 w-full h-2 bg-red-200 -z-10"></span>
+                  <span className="relative z-10">business.</span>
+                  <span className="absolute bottom-2 left-0 w-full h-2 bg-red-200 -z-10"></span>
                 </span>
-                .
               </h1>
 
               <p className="text-gray-600 text-lg max-w-xl">
@@ -572,10 +581,36 @@ export function Home(props) {
         />
 
         {/* Marquee text */}
-        <div className="absolute -top-12 w-full overflow-hidden">
-          <div className="whitespace-nowrap text-center font-semibold text-[210px] opacity-30 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-sky-500 animate-pulse">
-            we love data analytics
-          </div>
+        <div className="absolute -top-12 w-full overflow-hidden -z-10">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView="auto"
+            spaceBetween={50}
+            loop={true}
+            autoplay={{
+              delay: 0, // no delay
+              disableOnInteraction: false,
+            }}
+            speed={4000} // jitni speed chahiye utni badha/samjhda
+          >
+            <SwiperSlide>
+              <div className="whitespace-nowrap text-center font-semibold text-[210px] opacity-30 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-sky-500">
+                we love data analytics
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="whitespace-nowrap text-center font-semibold text-[210px] opacity-30 bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-pink-500">
+                we love data analytics
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="whitespace-nowrap text-center font-semibold text-[210px] opacity-30 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-purple-500">
+                we love data analytics
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
 
         {/* Content */}
