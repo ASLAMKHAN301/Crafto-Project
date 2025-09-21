@@ -70,7 +70,7 @@ export function Contact(props) {
     <>
       {/* section-1 */}
       <section
-        className="relative bg-cover bg-center py-16 md:py-24 md:pt-[130px] overflow-hidden"
+        className="relative bg-cover bg-center pt-32 pb-12 md:py-24 md:pt-[130px] overflow-hidden"
         style={{
           backgroundImage:
             "url('https://craftohtml.themezaa.com/images/demo-data-analysis-title-bg.jpg')",

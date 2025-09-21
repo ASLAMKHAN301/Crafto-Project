@@ -10,7 +10,7 @@ import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
     const location = useLocation();
-    const containerMargin = location.pathname === "/contact" ? "md:mt-[400px]" : "md:mt-0";
+    const containerMargin = location.pathname === "/contact" ? "mt-[800px] md:mt-[400px] " : "mt-0";
   return (
     <footer className={`text-white md:pt-[100px] pb-[30px] ${containerMargin}`}>
       <div className="container px-4 mx-auto">
