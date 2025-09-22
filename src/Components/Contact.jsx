@@ -121,7 +121,7 @@ export function Contact(props) {
             {/* Office Location */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
-                <FiMapPin className="inline-block mr-2 text-gray-700" />
+                <FiMapPin className="inline-block mr-2 mb-2 text-gray-700" />
                 Office location
               </span>
               <p className="m-0 text-gray-500">
@@ -132,7 +132,7 @@ export function Contact(props) {
             {/* Send a Message */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
-                <FiMail className="inline-block mr-2 text-gray-700" />
+                <FiMail className="inline-block mr-2 mb-2 text-gray-700" />
                 Send a message
               </span>
               <a
@@ -152,7 +152,7 @@ export function Contact(props) {
             {/* Call Us Directly */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
-                <FiPhone className="inline-block mr-2 text-gray-700" />
+                <FiPhone className="inline-block mr-2 mb-2 text-gray-700" />
                 Call us directly
               </span>
               <a
@@ -172,7 +172,7 @@ export function Contact(props) {
             {/* Join Our Team */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
-                <FiUsers className="inline-block mr-2 text-gray-700" />
+                <FiUsers className="inline-block mr-2 mb-2 text-gray-700" />
                 Join our team
               </span>
               <a
