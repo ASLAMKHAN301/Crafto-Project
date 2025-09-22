@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link ,useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -9,10 +9,13 @@ import {
 import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
-    const location = useLocation();
-    const containerMargin = location.pathname === "/contact" ? "mt-[800px] md:mt-[400px] " : "mt-0";
+  const location = useLocation();
+  const containerMargin =
+    location.pathname === "/contact" ? "mt-[800px] md:mt-[400px] " : "mt-0";
   return (
-    <footer className={`text-white pt-[60px] md:pt-[150px] pb-[30px] ${containerMargin}`}>
+    <footer
+      className={`text-white pt-[60px] md:pt-[150px] pb-[30px] ${containerMargin}`}
+    >
       <div className="container px-4 mx-auto">
         {/* Top Section */}
         <div className="w-full mb-8">
@@ -22,10 +25,13 @@ export default function Footer() {
             </h5>
             <Link
               to="/what-we-do"
-              className="inline-flex space-x-2 items-center mx-12 md:mx-0 bg-white text-sm md:text-lg text-gray-900 font-bold px-6 py-3 rounded-sm shadow hover:bg-gray-100 transition"
+              className="relative inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-md shadow-lg overflow-hidden transition-all duration-300 group hover:-translate-y-0.5 delay-300"
             >
-              <FiMail />
-              <span>Get started</span>
+              <span className="relative z-10 flex items-center transition-all duration-300 group-hover:-translate-x-10">
+                <FiMail className="w-4 h-4 mr-3" />
+                Get started
+                <FiMail className="w-4 h-4 mr-2 absolute -right-12 " />
+              </span>
             </Link>
             <div className="absolute left-0 bottom-0 h-1 w-full bg-gradient-to-r from-pink-500 via-purple-400 to-green-400"></div>
           </div>

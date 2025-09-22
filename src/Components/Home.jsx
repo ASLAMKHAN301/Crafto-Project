@@ -203,10 +203,13 @@ export function Home(props) {
 
                 <a
                   href="mailto:start@domain.com"
-                  className="flex items-center gap-2 text-gray-900 text-lg hover:underline"
+                  className="flex items-center gap-2 relative text-gray-900 text-lg transition group bg-gray-black "
                 >
-                  <Mail className="w-5 h-5" />
-                  <span>start@domain.com</span>
+                  <span className="flex items-center space-x-6 relative transition-all overflow-hidden group-hover:-translate-x-11">
+                    <Mail className="w-5 h-5" />
+                    <span>start@domain.com</span>
+                    <Mail className="w-5 h-5 absolute -right-0  transform translate-x-full transition-transform duration-300 group-hover:translate-x-0" />
+                  </span>
                 </a>
               </div>
             </div>
@@ -408,20 +411,27 @@ export function Home(props) {
               </div>
 
               {/* Buttons */}
-              <div className="mt-8 flex flex-col md:flex-row md:items-center gap-4">
+              <div className="flex flex-wrap items-center gap-6">
                 <a
                   href="#"
-                  className="relative inline-flex space-x-2 w-[170px] items-center px-6 py-3 bg-gray-800 text-white rounded-sm shadow hover:bg-gray-900 transition"
+                  className="flex items-center relative gap-2 bg-gray-900  text-white px-6 py-3 rounded-md shadow-md hover:bg-gray-800 transition group hover:-translate-y-0.5 delay-500"
                 >
-                  <Youtube className="w-5 h-5" />
-                  <span>How it works</span>
+                  <span className="flex items-center space-x-4 transition-all group-hover:-translate-x-11">
+                    <Youtube className="w-5 h-5" />
+                    <span>How it works</span>
+                    <Youtube className="w-5 h-5 absolute -right-5" />
+                  </span>
                 </a>
+
                 <a
                   href="#"
-                  className="inline-flex items-center space-x-2 text-gray-800 font-medium hover:text-gray-900 transition"
+                  className="flex items-center gap-2 relative text-gray-900 text-lg transition group bg-gray-black "
                 >
-                  <Briefcase className="w-5 h-5" />
-                  <span>Explore services</span>
+                  <span className="flex items-center space-x-6 relative transition-all overflow-hidden group-hover:-translate-x-11">
+                    <Briefcase className="w-5 h-5" />
+                    <span>Explore services</span>
+                    <Briefcase className="w-5 h-5 absolute -right-0  transform translate-x-full transition-transform duration-300 group-hover:translate-x-0" />
+                  </span>
                 </a>
               </div>
             </div>
@@ -501,9 +511,13 @@ export function Home(props) {
                     {/* Button */}
                     <a
                       href={service.link}
-                      className="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2 rounded-sm shadow hover:bg-gray-900 transition"
+                      className="inline-flex items-center  relative gap-2 bg-gray-800 text-white px-3 py-2 rounded-sm shadow hover:bg-gray-900 transition group"
                     >
-                      Learn more <FiArrowRight />
+                      <span className="flex  items-center space-x-5 transition-all group-hover:translate-x-6">
+                        <FiArrowRight className="absolute -left-5" />
+                        Learn more
+                        <FiArrowRight />
+                      </span>
                     </a>
                   </div>
                 </div>
