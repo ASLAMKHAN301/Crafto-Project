@@ -192,10 +192,13 @@ export function Home(props) {
               <div className="flex flex-wrap items-center gap-6">
                 <a
                   href="#"
-                  className="flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-md shadow-md hover:bg-gray-800 transition"
+                  className="flex items-center relative gap-2 bg-gray-900  text-white px-6 py-3 rounded-md shadow-md hover:bg-gray-800 transition group hover:-translate-y-0.5 delay-500"
                 >
-                  <Youtube className="w-5 h-5" />
-                  <span>How it works</span>
+                  <span className="flex items-center space-x-4 transition-all group-hover:-translate-x-11">
+                    <Youtube className="w-5 h-5" />
+                    <span>How it works</span>
+                    <Youtube className="w-5 h-5 absolute -right-5" />
+                  </span>
                 </a>
 
                 <a
@@ -588,10 +591,10 @@ export function Home(props) {
             spaceBetween={50}
             loop={true}
             autoplay={{
-              delay: 0, 
+              delay: 0,
               disableOnInteraction: false,
             }}
-            speed={4000} 
+            speed={4000}
           >
             <SwiperSlide>
               <div className="whitespace-nowrap text-center font-semibold text-[210px] opacity-30 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-sky-500">
@@ -708,7 +711,7 @@ export function Home(props) {
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={30}
-            slidesPerView={3} 
+            slidesPerView={3}
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}

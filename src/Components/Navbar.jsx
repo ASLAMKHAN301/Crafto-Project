@@ -22,11 +22,12 @@ export function Navbar(props) {
           <div className="flex items-center justify-center h-[42px] px-4">
             <p className="text-white text-md text-center">
               Provide data analytics solutions for startup business enterprises.{" "}
-              <a href="#" className="font-bold inline-flex gap-2 items-center border-b border-blue-50">
+              <a
+                href="#"
+                className="font-bold inline-flex gap-2 items-center border-b border-blue-50"
+              >
                 Explore services <FiArrowRight />
-                
               </a>
-              
             </p>
           </div>
         </div>
@@ -141,7 +142,7 @@ export function Navbar(props) {
             </a>
             <Link
               to="/contact"
-              className="relative inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-md shadow-lg overflow-hidden transition-all duration-300 group hover:-translate-y-0.5"
+              className="relative inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-md shadow-lg overflow-hidden transition-all duration-300 group hover:-translate-y-0.5 delay-300"
             >
               <span className="relative z-10 flex items-center transition-all duration-300 group-hover:-translate-x-10">
                 <Mail className="w-4 h-4 mr-3" />
