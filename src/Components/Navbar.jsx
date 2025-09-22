@@ -29,7 +29,6 @@ export function Navbar(props) {
           </div>
         </div>
         {/* navbar */}
-
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           {/* Logo */}
           <Link to="/" className="flex items-center">
@@ -48,8 +47,8 @@ export function Navbar(props) {
                 end
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 Home
@@ -60,8 +59,8 @@ export function Navbar(props) {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 About
@@ -72,8 +71,8 @@ export function Navbar(props) {
                 to="/what-we-do"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 What we do
@@ -84,8 +83,8 @@ export function Navbar(props) {
                 to="/cases"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 Cases
@@ -96,8 +95,8 @@ export function Navbar(props) {
                 to="/testimonials"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 Testimonials
@@ -108,8 +107,8 @@ export function Navbar(props) {
                 to="/pricing"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 Pricing
@@ -120,8 +119,8 @@ export function Navbar(props) {
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-600"
+                    ? "text-gray-600 font-semibold"
+                    : "hover:text-gray-500"
                 }
               >
                 Contact
@@ -133,9 +132,9 @@ export function Navbar(props) {
           <div className="hidden sm:flex items-center space-x-6">
             <a
               href="tel:1800222000"
-              className="flex items-center font-semibold"
+              className="flex items-center font-semibold hover:text-gray-500"
             >
-              <Phone className="w-4 h-4 mr-2" /> 1 800 222 000
+              <Phone className="w-4 h-4 mr-2 hover:text-gray-500" /> 1 800 222 000
             </a>
             <Link
               to="/contact"
@@ -150,7 +149,7 @@ export function Navbar(props) {
             className="lg:hidden flex items-center z-50"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X className="w-6 h-6 text-white hover:text-blue-500" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-6 h-6 text-white hover:text-gray-500" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
@@ -165,8 +164,8 @@ export function Navbar(props) {
                     end
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >
@@ -179,8 +178,8 @@ export function Navbar(props) {
                     to="/about"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >
@@ -193,8 +192,8 @@ export function Navbar(props) {
                     to="/what-we-do"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >
@@ -207,8 +206,8 @@ export function Navbar(props) {
                     to="/cases"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >
@@ -221,8 +220,8 @@ export function Navbar(props) {
                     to="/testimonials"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >
@@ -235,8 +234,8 @@ export function Navbar(props) {
                     to="/pricing"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >
@@ -249,8 +248,8 @@ export function Navbar(props) {
                     to="/contact"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 font-semibold"
-                        : "hover:text-blue-600"
+                        ? "text-gray-600 font-semibold"
+                        : "hover:text-gray-500"
                     }
                     onClick={() => setIsOpen(false)}
                   >

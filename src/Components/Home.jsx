@@ -161,7 +161,7 @@ export function Home(props) {
                 <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold uppercase px-4 py-2 rounded-full">
                   Get started
                 </span>
-                <span className="text-lg font-semibold">
+                <span className="text-lg font-semibold text-gray-500">
                   <ReactTyped
                     strings={[
                       "Real-time data score analysis",
@@ -721,7 +721,7 @@ export function Home(props) {
             {testimonials.map((t, index) => (
               <SwiperSlide key={index}>
                 <div className="flex border border-gray-300 rounded-lg overflow-hidden bg-white">
-                  <div className="pt-24 md:pt-[70px] ">
+                  <div className="pt-24 md:pt-[80px] ">
                     <h3 className="text-sm font-bold uppercase text-gray-700 rotate-270 inline-block">
                       {t.name}
                     </h3>
