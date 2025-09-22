@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
 
 export function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +22,11 @@ export function Navbar(props) {
           <div className="flex items-center justify-center h-[42px] px-4">
             <p className="text-white text-md text-center">
               Provide data analytics solutions for startup business enterprises.{" "}
-              <a href="#" className="font-bold ">
-                Explore services
-                <i className="feather icon-feather-arrow-right ml-1"></i>
+              <a href="#" className="font-bold inline-flex gap-2 items-center border-b border-blue-50">
+                Explore services <FiArrowRight />
+                
               </a>
+              
             </p>
           </div>
         </div>
@@ -134,13 +136,18 @@ export function Navbar(props) {
               href="tel:1800222000"
               className="flex items-center font-semibold hover:text-gray-500"
             >
-              <Phone className="w-4 h-4 mr-2 hover:text-gray-500" /> 1 800 222 000
+              <Phone className="w-4 h-4 mr-2 hover:text-gray-500" /> 1 800 222
+              000
             </a>
             <Link
               to="/contact"
-              className="flex items-center bg-white text-gray-900 font-bold px-4 py-2 rounded-full shadow hover:bg-gray-100 transition"
+              className="relative inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-md shadow-lg overflow-hidden transition-all duration-300 group hover:-translate-y-0.5"
             >
-              <Mail className="w-4 h-4 mr-2" /> Get a quote
+              <span className="relative z-10 flex items-center transition-all duration-300 group-hover:-translate-x-10">
+                <Mail className="w-4 h-4 mr-3" />
+                Get a quote
+                <Mail className="w-4 h-4 mr-2 absolute -right-12 " />
+              </span>
             </Link>
           </div>
 
@@ -149,7 +156,11 @@ export function Navbar(props) {
             className="lg:hidden flex items-center z-50"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X className="w-6 h-6 text-white hover:text-gray-500" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? (
+              <X className="w-6 h-6 text-white hover:text-gray-500" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
