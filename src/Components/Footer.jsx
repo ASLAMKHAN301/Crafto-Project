@@ -12,7 +12,7 @@ export default function Footer() {
     const location = useLocation();
     const containerMargin = location.pathname === "/contact" ? "mt-[800px] md:mt-[400px] " : "mt-0";
   return (
-    <footer className={`text-white pt-[100px] md:pt-[150px] pb-[30px] ${containerMargin}`}>
+    <footer className={`text-white pt-[40px] md:pt-[150px] pb-[30px] ${containerMargin}`}>
       <div className="container px-4 mx-auto">
         {/* Top Section */}
         <div className="w-full mb-8">

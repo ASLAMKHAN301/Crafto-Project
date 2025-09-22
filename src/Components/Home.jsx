@@ -432,7 +432,7 @@ export function Home(props) {
             spaceBetween={0}
             centeredSlides={true}
             loop={true}
-            speed={10000}
+            speed={6000}
             autoplay={{ delay: 1, disableOnInteraction: false }}
             modules={[Autoplay]}
           >
@@ -444,9 +444,9 @@ export function Home(props) {
               "predictive analytics",
               "data engineers",
             ].map((text, idx) => (
-              <SwiperSlide key={idx} className="w-auto py-16">
-                <div className="text-6xl font-extrabold text-gray-400 tracking-widest relative flex items-center justify-center">
-                  <span className="w-5 h-5 border-2 border-gray-400 rounded-full mx-12"></span>
+              <SwiperSlide key={idx} className="w-auto py-8 md:py-16">
+                <div className="text-4xl md:text-8xl  font-extrabold text-gray-400 tracking-widest relative flex items-center justify-center">
+                  <span className="w-5 h-4 md:h-5 border-2 border-gray-400 rounded-full mx-12"></span>
                   {text}
                 </div>
               </SwiperSlide>
@@ -588,10 +588,10 @@ export function Home(props) {
             spaceBetween={50}
             loop={true}
             autoplay={{
-              delay: 0, // no delay
+              delay: 0, 
               disableOnInteraction: false,
             }}
-            speed={4000} // jitni speed chahiye utni badha/samjhda
+            speed={4000} 
           >
             <SwiperSlide>
               <div className="whitespace-nowrap text-center font-semibold text-[210px] opacity-30 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-sky-500">
@@ -767,7 +767,7 @@ export function Home(props) {
 
       {/* section-8 */}
       <section className="bg-gradient-to-b from-gray-50 to-white pb-0">
-        <div className="container mx-auto md:px-16 py-12">
+        <div className="container mx-auto md:px-16 pt-12">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left content */}
             <div className="lg:w-1/2 relative text-center lg:text-left">
