@@ -708,7 +708,7 @@ export function Home(props) {
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={30}
-            slidesPerView={3} // show 3 slides at a time
+            slidesPerView={3} 
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
@@ -721,14 +721,14 @@ export function Home(props) {
             {testimonials.map((t, index) => (
               <SwiperSlide key={index}>
                 <div className="flex border border-gray-300 rounded-lg overflow-hidden bg-white">
-                  <div className="p-4 flex items-center justify-center bg-gray-100">
+                  <div className="pt-24 md:pt-[70px] ">
                     <h3 className="text-sm font-bold uppercase text-gray-700 rotate-270 inline-block">
                       {t.name}
                     </h3>
                   </div>
                   <div className="p-6 border-l border-gray-300 flex-1">
                     <p className="text-gray-600 mb-4">{t.review}</p>
-                    <div className="bg-yellow-400 text-white inline-block px-4 py-1 rounded-full text-lg">
+                    <div className="bg-yellow-400 text-white inline-block px-4 pt-1 pb-2 rounded-full text-xl">
                       ★★★★★
                     </div>
                   </div>
