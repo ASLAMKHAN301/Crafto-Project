@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FiArrowRight } from "react-icons/fi";
 import { ReactTyped } from "react-typed";
+import SubscribePopup from "./SubscribePopup ";
 
 const services = [
   {
@@ -136,7 +137,6 @@ export function Home(props) {
       {/* section-1 */}
       <section className="relative overflow-hidden bg-gradient-to-b from-pink-100 to-white pt-32 pb-0 md:pl-[100px] ">
         <div className="container mx-auto h-full relative">
-          {/* Background decorative images */}
           <img
             src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-01.png"
             alt="bg-shape"
@@ -155,7 +155,6 @@ export function Home(props) {
 
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center px-5 md:px-0">
-            {/* Text Side */}
             <div className="space-y-6 relative z-10 mb-16 md:mb-40">
               <div className="flex items-center gap-4">
                 <span className="bg-red-500 text-white text-[10px] md:text-xs font-semibold uppercase px-4 py-2 rounded-full">
@@ -188,7 +187,6 @@ export function Home(props) {
                 approaches to derive valuable insights from data.
               </p>
 
-              {/* Buttons */}
               <div className="flex flex-wrap items-center gap-6">
                 <a
                   href="#"
@@ -214,7 +212,6 @@ export function Home(props) {
               </div>
             </div>
 
-            {/* Right Image Side */}
             <div className="relative flex justify-center lg:justify-end">
               <img
                 src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-04.png"
@@ -233,7 +230,6 @@ export function Home(props) {
 
       {/* section-2 */}
       <section className="relative p-0 overflow-hidden">
-        {/* Floating images */}
         <img
           src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-06.png"
           className="absolute top-5 left-0 transform translate-y-20 hidden md:block"
@@ -246,7 +242,6 @@ export function Home(props) {
         />
 
         <div className="container px-5 md:px-0 mx-auto">
-          {/* Section header */}
           <div className="flex flex-col items-center mb-8">
             <div className="inline-block bg-green-400 text-white font-semibold text-xs uppercase px-5 py-2 rounded-full mb-4">
               About company
@@ -262,9 +257,8 @@ export function Home(props) {
           </div>
 
           <div className="flex justify-center">
-            {/* Features grid */}
+            {/* grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 md:w-[1140px]">
-              {/* Feature item 1 */}
               <div className="bg-gray-50 rounded-md py-[27px] px-[17px] md:py-[43px] md:px-[54px] flex gap-5 items-start">
                 <img
                   src="https://craftohtml.themezaa.com/images/demo-data-analysis-icon-01.png"
@@ -282,7 +276,6 @@ export function Home(props) {
                 </div>
               </div>
 
-              {/* Feature item 2 */}
               <div className="bg-white rounded-md py-[27px] px-[17px] md:py-[43px] md:px-[54px] flex gap-5 items-start">
                 <img
                   src="https://craftohtml.themezaa.com/images/demo-data-analysis-icon-02.png"
@@ -300,7 +293,6 @@ export function Home(props) {
                 </div>
               </div>
 
-              {/* Feature item 3 */}
               <div className="bg-red-100 rounded-md py-[27px] px-[17px] md:py-[43px] md:px-[54px] flex gap-5 items-start relative">
                 <div className="absolute right-40 top-6 md:right-6 md:top-6 bg-white text-gray-800 text-xs font-semibold uppercase px-4 py-1 rounded-full shadow-md">
                   Popular
@@ -321,7 +313,6 @@ export function Home(props) {
                 </div>
               </div>
 
-              {/* Feature item 4 */}
               <div className="bg-purple-100 rounded-md py-[27px] px-[17px] md:py-[43px] md:px-[54px] flex gap-5 items-start">
                 <img
                   src="https://craftohtml.themezaa.com/images/demo-data-analysis-icon-04.png"
@@ -341,7 +332,6 @@ export function Home(props) {
             </div>
           </div>
 
-          {/* Companies stats */}
           <div className="flex flex-col md:flex-row justify-center items-center text-center">
             <img
               src="https://craftohtml.themezaa.com/images/demo-data-analysis-01.png"
@@ -358,7 +348,6 @@ export function Home(props) {
 
       {/* section-3 */}
       <section className="relative md:pt-[90px] pb-0 overflow-hidden">
-        {/* Background image */}
         <img
           src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-08.png"
           alt=""
@@ -367,7 +356,6 @@ export function Home(props) {
 
         <div className="container mx-auto relative">
           <div className="flex flex-col lg:flex-row justify-center items-center px-5 md:px-0 mb-4 sm:mb-6">
-            {/* Left image */}
             <div className="w-full lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
               <img
                 src="https://craftohtml.themezaa.com/images/demo-data-analysis-02.png"
@@ -376,7 +364,6 @@ export function Home(props) {
               />
             </div>
 
-            {/* Right content */}
             <div className="w-full lg:w-5/12 lg:ml-8 space-y-4">
               <div className="inline-block bg-emerald-600 text-white font-semibold uppercase text-xs px-5 py-2 rounded-full">
                 Effective benefits
@@ -529,7 +516,6 @@ export function Home(props) {
 
       {/* section-5 */}
       <section className="relative overflow-hidden pt-[120px] pb-[54px] ">
-        {/* Background images */}
         <img
           src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-07.png"
           alt=""
@@ -552,7 +538,6 @@ export function Home(props) {
 
         {/* Content */}
         <div className="container mx-auto relative">
-          {/* Heading */}
           <div className="flex justify-center mb-8 text-center">
             <div>
               <div className="bg-emerald-600 text-white font-semibold uppercase text-xs px-6 py-2 rounded-full inline-block mb-4">
@@ -568,7 +553,6 @@ export function Home(props) {
             </div>
           </div>
 
-          {/* Steps */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
             {steps.map((step, idx) => (
               <div
@@ -590,14 +574,12 @@ export function Home(props) {
 
       {/* section-6 */}
       <section className="relative py-16">
-        {/* Background image */}
         <img
           src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-08.png"
           alt=""
           className="absolute top-12 left-0 w-1/2 object-contain -z-10 animate-float"
         />
 
-        {/* Marquee text */}
         <div className="absolute -top-12 w-full overflow-hidden -z-10">
           <Swiper
             modules={[Autoplay]}
@@ -630,7 +612,6 @@ export function Home(props) {
           </Swiper>
         </div>
 
-        {/* Content */}
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Left Image */}
@@ -707,7 +688,6 @@ export function Home(props) {
       {/* section-7 */}
       <section className="pt-0 overflow-hidden">
         <div className="container mx-auto px-4">
-          {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-block bg-emerald-500 text-white uppercase px-6 py-2 text-sm rounded-full mb-4">
               Testimonials
@@ -754,7 +734,6 @@ export function Home(props) {
             ))}
           </Swiper>
 
-          {/* Clients */}
           <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center my-12">
             {clients.map((c, index) => (
               <div key={index} className="text-center">
@@ -767,7 +746,6 @@ export function Home(props) {
             ))}
           </div>
 
-          {/* Footer Note */}
           <div className="text-center flex flex-col space-x-0 md:space-x-3 md:flex-row justify-center items-center">
             <img
               src="https://craftohtml.themezaa.com/images/demo-data-analysis-06.png"
@@ -818,7 +796,6 @@ export function Home(props) {
               />
             </div>
 
-            {/* Right accordion */}
             <div className="lg:w-1/2">
               {faqs.map((faq, index) => (
                 <div key={index}>
@@ -844,6 +821,8 @@ export function Home(props) {
           </div>
         </div>
       </section>
+
+      <SubscribePopup />
     </>
   );
 }

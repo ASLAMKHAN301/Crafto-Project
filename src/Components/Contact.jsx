@@ -77,7 +77,6 @@ export function Contact(props) {
         }}
       >
         <div className="container mx-auto relative h-full">
-          {/* Floating left image */}
           <div className="absolute -top-10 left-5 md:top-0 md:left-20 xs:left-2 animate-spin-slow">
             <img
               src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-01.png"
@@ -86,7 +85,6 @@ export function Contact(props) {
             />
           </div>
 
-          {/* Floating right image */}
           <div className="absolute right-4 bottom-20 md:right-20 xs:right-2 animate-spin-slow">
             <img
               src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-03.png"
@@ -95,7 +93,6 @@ export function Contact(props) {
             />
           </div>
 
-          {/* Title content */}
           <div className="flex justify-center items-center h-full px-5 md:px-0">
             <div className="text-center md:max-w-xl">
               <h1 className="bg-emerald-500 text-white text-xs uppercase font-semibold px-5 py-2 rounded-full inline-block mb-4">
@@ -118,7 +115,6 @@ export function Contact(props) {
       <section className="pt-0 md:pt-[76px] md:pb-[110px] ">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 md:mx-32 md:justify-center text-center sm:text-left">
-            {/* Office Location */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
                 <FiMapPin className="inline-block mr-2 mb-2 text-gray-700" />
@@ -129,7 +125,6 @@ export function Contact(props) {
               </p>
             </div>
 
-            {/* Send a Message */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
                 <FiMail className="inline-block mr-2 mb-2 text-gray-700" />
@@ -149,7 +144,6 @@ export function Contact(props) {
               </a>
             </div>
 
-            {/* Call Us Directly */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
                 <FiPhone className="inline-block mr-2 mb-2 text-gray-700" />
@@ -169,7 +163,6 @@ export function Contact(props) {
               </a>
             </div>
 
-            {/* Join Our Team */}
             <div className="mb-[35px] md:mb-0">
               <span className="font-semibold text-lg text-gray-800 border-b-2 border-gray-800 pb-3 mb-3 inline-block w-[90%] md:w-[80%]">
                 <FiUsers className="inline-block mr-2 mb-2 text-gray-700" />
@@ -258,7 +251,6 @@ export function Contact(props) {
                       )}
                     </div>
 
-                    {/* Phone */}
                     <div>
                       <label className="text-sm uppercase text-gray-800 font-semibold">
                         Your phone number*
@@ -281,7 +273,6 @@ export function Contact(props) {
                       )}
                     </div>
 
-                    {/* Email */}
                     <div>
                       <label className="text-sm uppercase text-gray-800 font-semibold">
                         Your email address*
@@ -304,7 +295,6 @@ export function Contact(props) {
                       )}
                     </div>
 
-                    {/* Subject */}
                     <div>
                       <label className="text-sm uppercase text-gray-800 font-semibold">
                         Your subject
@@ -323,7 +313,6 @@ export function Contact(props) {
                     </div>
                   </div>
 
-                  {/* Message */}
                   <div>
                     <label className="text-sm uppercase text-gray-800 font-semibold">
                       Your message
@@ -341,7 +330,6 @@ export function Contact(props) {
                     </div>
                   </div>
 
-                  {/* Privacy + Submit */}
                   <div className="grid md:grid-cols-2 items-center">
                     <p className="text-md text-gray-600">
                       We are committed to protecting your privacy. We will never
@@ -360,7 +348,7 @@ export function Contact(props) {
                 </form>
               </div>
             </div>
-            {/* Social Media */}
+
             <div className="flex flex-col md:flex-row justify-center items-center mt-10  space-y-4 md:space-y-0 md:space-x-6">
               {" "}
               <span className="text-2xl font-semibold text-gray-800">

@@ -30,7 +30,7 @@ export default function Footer() {
               <span className="relative z-10 flex items-center transition-all duration-300 group-hover:-translate-x-10">
                 <FiMail className="w-4 h-4 mr-3" />
                 Get started
-                <FiMail className="w-4 h-4 mr-2 absolute -right-12 " />
+                <FiMail className="w-4 h-4 mr-2 absolute -right-24 md:-right-12 " />
               </span>
             </Link>
             <div className="absolute left-0 bottom-0 h-1 w-full bg-gradient-to-r from-pink-500 via-purple-400 to-green-400"></div>

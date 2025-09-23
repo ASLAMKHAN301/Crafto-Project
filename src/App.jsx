@@ -4,6 +4,7 @@ import { Navbar } from "./Components/Navbar";
 import { Home } from "./Components/Home";
 import { Contact } from "./Components/Contact";
 import Footer from "./Components/Footer";
+import SubscribePopup from "./Components/SubscribePopup ";
 
 
 export default function HeroSection() {
@@ -15,7 +16,9 @@ export default function HeroSection() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<About />} /> */}
         <Route path="/contact" element={<Contact />} />
+         
       </Routes>
+      <SubscribePopup/>
       <Footer/>
 
     </>
