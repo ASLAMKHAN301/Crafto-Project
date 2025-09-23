@@ -8,7 +8,7 @@ export default function SubscribePopup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 1000); // 5000 ms = 5 seconds
+    }, 5000); // 5000 ms = 5 seconds
 
     return () => clearTimeout(timer); // cleanup if component unmounts
   }, []);
