@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Wallet2, CalendarCheck, Clock } from "lucide-react";
 
 export default function SubscribePopup() {
-  const [isOpen, setIsOpen] = useState(false); // initially closed
+  const [isOpen, setIsOpen] = useState(false);
 
   // Auto open after 5 seconds
   useEffect(() => {
@@ -10,19 +10,15 @@ export default function SubscribePopup() {
       setIsOpen(true);
     }, 5000); // 5000 ms = 5 seconds
 
-    return () => clearTimeout(timer); // cleanup if component unmounts
+    return () => clearTimeout(timer);
   }, []);
 
   // Disable scroll when popup is open
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
-  if (!isOpen) return null; // hide popup if closed
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-10">

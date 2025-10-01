@@ -39,7 +39,7 @@ export default function Footer() {
 
         {/* Main Footer Links */}
         <div className="flex flex-col lg:flex-row items-center justify-between mb-8">
-          {/* Logo */}
+         
           <div className="mb-4 lg:mb-0">
             <Link to="/">
               <img

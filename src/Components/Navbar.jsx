@@ -33,7 +33,7 @@ export function Navbar(props) {
         </div>
         {/* navbar */}
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
-          {/* Logo */}
+          
           <Link to="/" className="flex items-center">
             <img
               src="https://craftohtml.themezaa.com/images/demo-data-analysis-logo-black.png"
@@ -131,7 +131,6 @@ export function Navbar(props) {
             </li>
           </ul>
 
-          {/* Right Side */}
           <div className="hidden sm:flex items-center space-x-6">
             <a
               href="tel:1800222000"
@@ -165,7 +164,7 @@ export function Navbar(props) {
           </button>
         </div>
 
-        {/* Mobile Menu Overlay */}
+        {/* Mobile Menu */}
         {isOpen && (
           <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-40">
             <div className="fixed top-0 right-0 w-full h-full bg-gray-800 text-white shadow-lg p-10 pt-40 z-50 overflow-y-auto">

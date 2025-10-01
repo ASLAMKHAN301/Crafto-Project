@@ -536,7 +536,6 @@ export function Home(props) {
           />
         </div>
 
-        {/* Content */}
         <div className="container mx-auto relative">
           <div className="flex justify-center mb-8 text-center">
             <div>
@@ -623,7 +622,6 @@ export function Home(props) {
               />
             </div>
 
-            {/* Right Content */}
             <div>
               <div className="bg-emerald-600 text-white font-semibold uppercase px-5 py-2 text-xs rounded-full inline-block mb-5">
                 Flexible pricing
@@ -638,7 +636,6 @@ export function Home(props) {
                 plans for everyone.
               </h2>
 
-              {/* Accordion */}
               <div className="space-y-4">
                 {plans.map((plan, index) => (
                   <div
@@ -764,7 +761,6 @@ export function Home(props) {
       <section className="bg-gradient-to-b from-gray-50 to-white pb-0">
         <div className="container mx-auto md:px-16 pt-12">
           <div className="flex flex-col lg:flex-row gap-8">
-            {/* Left content */}
             <div className="lg:w-1/2 relative text-center lg:text-left">
               <div className="inline-block bg-emerald-500 text-white uppercase px-5 py-2 text-xs rounded-full mb-5">
                 Customer support
