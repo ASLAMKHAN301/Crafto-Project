@@ -210,7 +210,7 @@ export function Contact(props) {
         </div>
 
         {/* section-4 */}
-        <section className="absolute top-46 md:left-10 lg:left-44 pb-20 px-5 md:px-0">
+        <section className="absolute top-46 md:left-10 2xl:left-44 pb-20 px-5 md:px-0">
           <div className="container mx-auto">
             <div className="flex justify-center my-16">
               <div className="lg:w-10/12 bg-white p-[28px] md:p-[78px] rounded-md shadow-2xl">
