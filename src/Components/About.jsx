@@ -68,7 +68,7 @@ export function About(props) {
         <img
           src="https://craftohtml.themezaa.com/images/demo-data-analysis-bg-03.png"
           alt=""
-          className="absolute bottom-36 right-2 hidden md:block w-24 animate-spin-slow"
+          className="absolute bottom-36 right-52 hidden md:block w-24 animate-spin-slow"
         />
 
         <div className="container mx-auto md:max-w-[1220px] flex justify-center text-center pt-32 md:py-20 px-4 md:px-0">
